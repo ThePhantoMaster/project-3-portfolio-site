@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning Demo</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="#static-section">Static</a>
+            <a href="#sticky-section">Sticky</a>
+            <a href="#relative-section">Relative</a>
+            <a href="#absolute-section">Absolute</a>
+            <a href="#fixed-section">Fixed</a>
+        </nav>
+        <section id="static-section">
+            <h2>Static</h2>
+            <h3>This section has a default value of <code>position: static;</code></h3>
+
+            <p><code>position: static;</code> is the default position value for HTML elements. It keeps content in the expected flow and any element that uses <code>position: static;</code> will ignore any applied <code>top: [value];</code>, <code>right: [value];</code>, <code>bottom: [value];</code>, <code>left: [value];</code>, or <code>z-index: [value];</code> property/value pair.</p>
+
+            <div class="example-container">
+                <div class="object static top">This object uses <code>position: static;</code> with <code>top: 24px;</code>.</div>
+                <div class="object static right">This object uses <code>position: static;</code> with <code>right: 24px;</code>.</div>
+                <div class="object static bottom">This object uses <code>position: static;</code> with <code>bottom: 24px;</code>.</div>
+                <div class="object static left">This object uses <code>position: static;</code> with <code>left: 24px;</code>.</div>
+            </div>
+
+        </section>
+
+        <section id="sticky-section">
+            <h2>Sticky</h2>
+            <h3>This section has a default value of <code>position: static;</code> however the examples within use <code>position: sticky;</code> coupled with a directional value like <code>top: [value];</code>.</h3>
+
+            <p><code>position: sticky;</code> checks the position of an object in relation to the viewport (screen). It keeps content in the expected flow until that object reaches the determined distance from one of the viewports edges as defined using one of the directional properties (<code>top, right, bottom, left</code>). Any element that uses <code>position: sticky;</code> also requires one of the directional properties defined as <code>top: [value];</code>, <code>right: [value];</code>, <code>bottom: [value];</code>, <code>left: [value];</code>, or <code>z-index: [value];</code> property/value pair.</p>
+
+            <div class="example-container">
+                <div class="object sticky top">This object uses <code>position: sticky;</code> with <code>top: 24px;</code>.</div>
+                <div class="object sticky right">This object uses <code>position: sticky;</code> with <code>right: 24px;</code>.</div>
+                <div class="object sticky bottom">This object uses <code>position: sticky;</code> with <code>bottom: 24px;</code>.</div>
+                <div class="object sticky left">This object uses <code>position: sticky;</code> with <code>left: 24px;</code>.</div>
+            </div>
+
+        </section>
+
+        <section id="relative-section">
+            <h2>Relative</h2>
+            <h3>This section has a default value of <code>position: static;</code> however the examples within use <code>position: relative;</code> coupled with a directional value like <code>top: [value];</code>.</h3>
+
+            <p><code>position: relative;</code> initially appears identical to <code>position: static;</code> until you pair it with a directional value. It keeps content in the expected flow but when paired with a directional vlaue it will adjust the position of that element the set distance of the directional value from its default placement. Meaning, <code>top: 24px;</code> will push the display of that element down (from the top) 24px;</p>
+
+            <p>Hover each object to see their starting position before <code>position: relative;</code> was applied.</p>
+
+            <div class="example-container">
+                <div class="object relative top">This object uses <code>position: relative;</code> with <code>top: 24px;</code>.</div>
+                <div class="object relative right">This object uses <code>position: relative;</code> with <code>right: 24px;</code>.</div>
+                <div class="object relative bottom">This object uses <code>position: relative;</code> with <code>bottom: 24px;</code>.</div>
+                <div class="object relative left">This object uses <code>position: relative;</code> with <code>left: 24px;</code>.</div>
+            </div>
+
+        </section>
+
+        <section id="absolute-section">
+            <h2>Absolute</h2>
+            <h3>This section has a default value of <code>position: static;</code> however the example container uses <code>position: relative;</code> and the examples within use <code>position: absolute;</code> coupled with a directional value like <code>top: [value];</code>.</h3>
+
+            <p><code>position: absolute;</code> initially appears identical to <code>position: fixed;</code> until you pair it with a parent element that uses <code>position: relative;</code>. This pairing is the most common way that <code>position: absolute;</code> is used and my recommendation to you as well. It removes the content from the expected flow entirely, and will collapse its parent element if there is no other content within the parent element. When paired with a directional vlaue it will position the directional value of that element the set distance of the direction value from the same edge of its parent container. Meaning, <code>top: 24px;</code> will position the top edge of the element <code>24px</code> from the top edge of the parent container.</p>
+
+            <div class="example-container">
+                <div class="object absolute top">This object uses <code>position: absolute;</code> with <code>top: 24px;</code>.</div>
+                <div class="object absolute right">This object uses <code>position: absolute;</code> with <code>right: 24px;</code>.</div>
+                <div class="object absolute bottom">This object uses <code>position: absolute;</code> with <code>bottom: 24px;</code>.</div>
+                <div class="object absolute left">This object uses <code>position: absolute;</code> with <code>left: 24px;</code>.</div>
+            </div>
+
+        </section>
+
+        <section id="fixed-section">
+            <h2>Fixed</h2>
+            <h3>This section has a default value of <code>position: static;</code> however the examples within use <code>position: fixed;</code> coupled with a directional value like <code>top: [value];</code>.</h3>
+
+            <p><code>position: fixed;</code> is the most aggressive positioning mode as it always removes the content from the expected flow entirely, will collapse its parent element if there is no other content within the parent element, and will always position itself based on the viewport no matter what its parent element is set to. Meaning, <code>top: 24px;</code> will position the top edge of the element <code>24px</code> from the top edge of the screen, always, even as you scroll.</p>
+
+            <div class="example-container">
+                <div class="object fixed top right">This object uses <code>position: fixed;</code> with <code>top: 24px; right: 24px;</code>.</div>
+                <div class="object fixed bottom left">This object uses <code>position: fixed;</code> with <code>bottom: 24px; left: 24px;</code>.</div>
+            </div>
+
+        </section>
+
+    </body>
+</html>

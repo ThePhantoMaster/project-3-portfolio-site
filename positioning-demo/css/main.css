@@ -1,0 +1,129 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+}
+
+section > * {
+    max-width: 1000px;
+}
+
+section:nth-of-type(2n) {
+    background: #CCC;
+}
+
+.example-container {
+    align-items: center;
+    border: solid black 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 12px;
+}
+
+.object {
+    align-content: center;
+    aspect-ratio: 1/1;
+    display: flex-item;
+    justify-content: center;
+    padding: 20px;
+    width: 160px;
+}
+
+.object.static {
+    background-color: red;
+    color: white;
+    position: static;
+}
+
+.object.sticky {
+    background-color: yellow;
+    color: black;
+    position: sticky;
+}
+
+.object.relative {
+    background-color: green;
+    color: white;
+    position: relative;
+}
+
+.object.absolute {
+    background-color: blue;
+    color: white;
+    position: absolute;
+}
+
+.object.fixed {
+    background-color: violet;
+    color: black;
+    position: fixed;
+}
+
+.object.top {
+    top: 24px;
+}
+
+.object.right {
+    right: 24px;
+}
+
+.object.bottom {
+    bottom: 24px;
+}
+
+.object.left {
+    left: 24px;
+}
+
+#sticky-section .object.top {
+    align-self: flex-start;
+}
+
+#sticky-section .object.bottom {
+    align-self: flex-end;
+}
+
+#relative-section .object {
+    transition: all 500ms ease-in-out;
+}
+
+#relative-section .object.top:hover {
+    top: 0 !important;
+}
+
+#relative-section .object.right:hover {
+    right: 0 !important;
+}
+
+#relative-section .object.bottom:hover {
+    bottom: 0 !important;
+}
+
+#relative-section .object.left:hover {
+    left: 0 !important;
+}
+
+#absolute-section .example-container {
+    position: relative;
+    width: 100%;
+}
+
+#fixed-section .example-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+#fixed-section .object {
+    font-size: 10px;
+    padding: 12px;
+    width: 100px;
+}
