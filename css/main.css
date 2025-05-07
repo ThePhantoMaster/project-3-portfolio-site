@@ -1,3 +1,5 @@
+
+
 /* Browser/Display fixes */
 html,
 body {
@@ -22,4 +24,38 @@ p:first-child,
 ol:first-child,
 ul:first-child {
     margin-top: 0;
+}
+
+.sentence {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 95%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'New Super Mario Font U';
+    font-weight: bold;
+    font-style: normal;
+    justify-content: center;
+    min-height: 40vh;
+    padding: 48px 0;
+    text-align: left;
+}
+
+#intro {
+    background-blend-mode: multiply;
+    background-color: rgb(0, 183, 255);
+    background-image: url("../images/luma-lee-darker-bg.png");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    transition: all 500ms ease-in-out;
+
+    /* this allows us to put the color overlay over the image */
+    position: relative;
+    text-align: center;
+    z-index: 0;
 }
