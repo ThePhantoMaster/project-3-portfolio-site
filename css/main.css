@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
+:root {
+    --main-color: rgb(6, 91, 72);
+    --main-contrast-color: rgb(255, 235, 200);
+    --accent-color: rgb(228, 145, 29);
+    --accent-contrast-color: rgb(0, 29, 30);
+}
 
 /* Browser/Display fixes */
 html,
 body {
-    font-family: 'New Super Mario Font U';
+    font-family: 'Cal Sans';
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -26,6 +33,16 @@ ul:first-child {
     margin-top: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 80%;
+}
+
 .sentence {
     margin: 0 auto;
     max-width: 1440px;
@@ -35,13 +52,65 @@ ul:first-child {
 section {
     display: flex;
     flex-direction: column;
-    font-family: 'New Super Mario Font U';
     font-weight: bold;
     font-style: normal;
     justify-content: center;
     min-height: 40vh;
     padding: 48px 0;
     text-align: left;
+}
+
+section:nth-child(2n) {
+    background-color: aquamarine;
+    color: rgb(0, 0, 150);
+    font-size: 30px;
+    text-align: center;
+}
+
+section:nth-child(3n) {
+    background-color: rgb(128, 255, 77);
+    color: rgb(94, 36, 97);
+    font-size: 30px;
+    text-align: center;
+}
+
+section:nth-child(4n) {
+    background-color: rgb(255, 21, 21);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+section:nth-child(5n) {
+    background-color: rgb(176, 111, 255);
+    color: rgb(71, 23, 23);
+    font-size: 35px;
+    text-align: center;
+}
+
+section:nth-child(6n) {
+    background-color: rgb(255, 155, 42);
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+section:nth-child(7n) {
+    background-color: rgb(255, 170, 241);
+    color: rgb(255, 204, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+section .center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section h2 {
+    width: 100%;
 }
 
 #intro {
@@ -58,4 +127,40 @@ section {
     position: relative;
     text-align: center;
     z-index: 0;
+}
+
+#intro .center {
+    align-items: center;
+}
+
+#intro .thumbnail {
+    flex-basis: 35%;
+    margin-right: 5%;
+}
+
+#intro .text {
+    flex-basis: 60%;
+    font-size: clamp(36px, 6vw, 50px);
+}
+
+.thumbnail {
+    flex-grow: 0;
+    flex-basis: 31.5%;
+}
+
+.thumbnail a:empty {
+    display: none;
+}
+
+.thumbnail a img {
+    display: block;
+}
+
+/* "+" Targets an element with a class of, "thumbnail" only if it immediately follows (is a direct sibling of) another element that also has a class of, "thumbnail." */
+.thumbnail + .thumbnail {
+    margin-top: 30px;
+}
+
+.thumbnail + .thumbnail + .thumbnail {
+    margin-top: 60px;
 }
