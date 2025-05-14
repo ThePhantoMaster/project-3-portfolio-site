@@ -131,6 +131,8 @@ section .center {
 }
 
 section h2 {
+    text-decoration-line: underline;
+    text-decoration-line: 10 px;
     width: 100%;
 }
 
@@ -170,7 +172,7 @@ section h2 {
 }
 
 .thumbnail a:empty {
-    display: none;
+    display: non
 }
 
 .thumbnail a img {
