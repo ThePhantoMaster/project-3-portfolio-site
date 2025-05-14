@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url("../fonts/happiness-sans/stylesheet.css");
 
 :root {
     --main-color: rgb(6, 91, 72);
@@ -10,7 +10,7 @@
 /* Browser/Display fixes */
 html,
 body {
-    font-family: 'Cal Sans';
+    font-family: 'Happiness Sans';
     font-weight: 400;
     font-style: normal;
     margin: 0;

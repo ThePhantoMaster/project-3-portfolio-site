@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Happiness Sans';
+    src: url('Happiness-Sans.woff2') format('woff2'),
+        url('Happiness-Sans.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
