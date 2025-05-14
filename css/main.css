@@ -73,7 +73,7 @@ section:nth-child(2n) {
 
 section:nth-child(3n) {
     background-blend-mode: multiply;
-    background-color: rgb(255, 36, 207);
+    background-color: rgb(168, 23, 137);
     background-image: url("../images/SMO\ Lake.png");
     background-position: center;
     color: rgb(250, 197, 223);
@@ -83,11 +83,11 @@ section:nth-child(3n) {
 
 section:nth-child(4n) {
     background-blend-mode: multiply;
-    background-color: rgb(255, 21, 21);
+    background-color: rgb(177, 10, 10);
     background-image: url("../images/Stamp_Background_Artwork_-_Super_Mario_3D_World.png");
     background-position: center;
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -103,7 +103,7 @@ section:nth-child(5n) {
 
 section:nth-child(6n) {
     background-blend-mode: multiply;
-    background-color: rgb(255, 155, 42);
+    background-color: rgb(193, 111, 17);
     background-image: url("../images/Map.png");
     background-position: center;
     color: rgb(0, 0, 0);
@@ -136,11 +136,11 @@ section h2 {
 
 #intro {
     background-blend-mode: multiply;
-    background-color: rgb(0, 183, 255);
+    background-color: rgb(0, 83, 116);
     background-image: url("../images/luma-lee-darker-bg.png");
     background-position: center;
     background-size: cover;
-    color: rgb(255, 255, 255);
+    color: rgb(251, 255, 0);
     font-size: 100px;
     transition: all 500ms ease-in-out;
 
