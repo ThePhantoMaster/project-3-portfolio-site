@@ -167,8 +167,12 @@ section h2 {
 }
 
 .thumbnail {
+    border-color: azure;
+    border-style: ridge;
+    border-width: 6px; 
     flex-grow: 0;
     flex-basis: 31.5%;
+    object-fit: cover;
 }
 
 .thumbnail a:empty {
