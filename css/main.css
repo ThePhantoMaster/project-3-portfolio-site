@@ -74,7 +74,7 @@ section:nth-child(2n) {
 section:nth-child(3n) {
     background-blend-mode: multiply;
     background-color: rgb(168, 23, 137);
-    background-image: url("../images/SMO\ Lake.png");
+    background-image: url("../images/SMO-Lake.png");
     background-position: center;
     color: rgb(250, 197, 223);
     font-size: 30px;
