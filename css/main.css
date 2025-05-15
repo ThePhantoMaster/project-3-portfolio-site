@@ -33,6 +33,14 @@ ul:first-child {
     margin-top: 0;
 }
 
+.thumbnail img {
+    border: ridge;
+    border-color: azure;
+    border-style: ridge;
+    border-width: 6px;
+    object-fit: cover;
+}
+
 img {
     max-width: 100%;
 }
@@ -166,13 +174,9 @@ section h2 {
     font-size: clamp(36px, 6vw, 50px);
 }
 
-.thumbnail {
-    border-color: azure;
-    border-style: ridge;
-    border-width: 6px; 
+.thumbnail { 
     flex-grow: 0;
     flex-basis: 31.5%;
-    object-fit: cover;
 }
 
 .thumbnail a:empty {
