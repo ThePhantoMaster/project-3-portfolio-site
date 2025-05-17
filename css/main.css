@@ -1,12 +1,5 @@
 @import url("../fonts/happiness-sans/stylesheet.css");
 
-:root {
-    --main-color: rgb(6, 91, 72);
-    --main-contrast-color: rgb(255, 235, 200);
-    --accent-color: rgb(228, 145, 29);
-    --accent-contrast-color: rgb(0, 29, 30);
-}
-
 /* Browser/Display fixes */
 html,
 body {
@@ -31,6 +24,14 @@ p:first-child,
 ol:first-child,
 ul:first-child {
     margin-top: 0;
+}
+
+h4 {
+    flex-basis: 60%;
+    font-size: clamp(20px, 6vw, 25px);
+    justify-content: space-around;
+    text-align: center;
+    background-color: aqua;
 }
 
 .thumbnail img {
@@ -71,7 +72,7 @@ section {
 section:nth-child(2n) {
     background-blend-mode: multiply;
     background-color: rgb(27, 189, 135);
-    background-image: url("../images/2013588_waifu2x_art_noise3_scale_tta_1.png");
+    background-image: url("../images/comets.png");
     background-position: center;
     background-size: cover;
     color: rgb(226, 210, 234);
@@ -81,8 +82,8 @@ section:nth-child(2n) {
 
 section:nth-child(3n) {
     background-blend-mode: multiply;
-    background-color: rgb(168, 23, 137);
-    background-image: url("../images/SMO-Lake.png");
+    background-color: rgb(140, 17, 114);
+    background-image: url("../images/lake.png");
     background-position: center;
     color: rgb(250, 197, 223);
     font-size: 30px;
@@ -92,7 +93,7 @@ section:nth-child(3n) {
 section:nth-child(4n) {
     background-blend-mode: multiply;
     background-color: rgb(177, 10, 10);
-    background-image: url("../images/Stamp_Background_Artwork_-_Super_Mario_3D_World.png");
+    background-image: url("../images/stamp-background.png");
     background-position: center;
     color: rgb(255, 255, 255);
     font-size: 35px;
@@ -102,7 +103,7 @@ section:nth-child(4n) {
 section:nth-child(5n) {
     background-blend-mode: multiply;
     background-color: rgb(76, 43, 115);
-    background-image: url("../images/Background3.jpg");
+    background-image: url("../images/blockybackground.jpg");
     background-position: center;
     color: rgb(231, 117, 117);
     font-size: 35px;
@@ -112,7 +113,7 @@ section:nth-child(5n) {
 section:nth-child(6n) {
     background-blend-mode: multiply;
     background-color: rgb(193, 111, 17);
-    background-image: url("../images/Map.png");
+    background-image: url("../images/map.png");
     background-position: center;
     color: rgb(0, 0, 0);
     font-size: 35px;
@@ -121,8 +122,20 @@ section:nth-child(6n) {
 
 section:nth-child(7n) {
     background-blend-mode: multiply;
+    background-color: rgb(1, 146, 162);
+    background-image: url("../images/stars.png");
+    background-position: center;
+    color: rgb(114, 255, 133);
+    min-height: 40vh;
+    padding: 36px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+section:nth-child(8n) {
+    background-blend-mode: multiply;
     background-color: rgb(43, 100, 144);
-    background-image: url("../images/New_Year_2020_My_Nintendo_desktop.png");
+    background-image: url("../images/bottombackground.png");
     background-position: center;
     color: rgb(114, 255, 133);
     min-height: 40vh;
@@ -147,7 +160,7 @@ section h2 {
 #intro {
     background-blend-mode: multiply;
     background-color: rgb(0, 83, 116);
-    background-image: url("../images/luma-lee-darker-bg.png");
+    background-image: url("../images/comets.png");
     background-position: center;
     background-size: cover;
     color: rgb(251, 255, 0);
@@ -156,7 +169,7 @@ section h2 {
 
     /* this allows us to put the color overlay over the image */
     position: relative;
-    text-align: center;
+    text-align: left;
     z-index: 0;
 }
 
@@ -171,7 +184,7 @@ section h2 {
 
 #intro .text {
     flex-basis: 60%;
-    font-size: clamp(36px, 6vw, 50px);
+    font-size: clamp(24px, 6vw, 25px);
 }
 
 .thumbnail { 
