@@ -26,6 +26,11 @@ ul:first-child {
     margin-top: 0;
 }
 
+a:hover{
+    color: #952626;
+    text-decoration: none;
+}
+
 h4 {
     flex-basis: 60%;
     font-size: clamp(20px, 6vw, 25px);
