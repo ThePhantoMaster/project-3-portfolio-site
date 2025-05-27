@@ -117,10 +117,10 @@ section:nth-child(5n) {
 
 section:nth-child(6n) {
     background-blend-mode: multiply;
-    background-color: rgb(193, 111, 17);
-    background-image: url("../images/map.png");
+    background-color: rgb(121, 78, 14);
+    background-image: url("../images/gusty.png");
     background-position: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 142, 4);
     font-size: 35px;
     text-align: center;
 }
